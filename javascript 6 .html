@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Dom</title>
+    </head>
+    <body>
+        <h1 id="one">Welcome</h1>
+        <p>This is a welcome message</p>
+        <h2>Introduction</h2>
+        <p>My name is Ayaan</p>
+        <script>
+            var text = document.getElementById("one").innerHTML;
+            alert("The first heading is: " + text);
+        </script>
+        <p>Adding a separate JS file</p>
+        <button type="button" onclick="myfunction()">Click Me!</button>
+        <p id="demo"></p>
+            <script src="script.js"></script>
+            <h1>Real Time Validation using JavaScript</h1>
+            <hr>
+            <form id="loginform" onsubmit="validate(event)">
+                <fieldset>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" minlength="12">
+                    </div>
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="12" max="50">
+                    </div>
+                    <button type="submit">login</button>
+                </fieldset>
+                <div id="message"></div>
+                <script src="validate.js"></script>
+            </form>
+    </body>
+</html>
